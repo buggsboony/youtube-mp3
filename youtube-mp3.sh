@@ -10,10 +10,10 @@ NC='\033[0m' # No Color
 
  
 
-echo $target
+link=$1
 
 
-printf "Command line is : ${YELL}'youtube-dl --extract-audio --audio-format mp3 --audio-quality '${NC}\n"
+printf "Command line is : ${YELL}'youtube-dl --extract-audio --audio-format mp3 --audio-quality 0 "link"'${NC}\n"
 
 youtube-dl --extract-audio --audio-format mp3 --audio-quality 0 "$link"
 ##source ${BASH_SOURCE[0]}

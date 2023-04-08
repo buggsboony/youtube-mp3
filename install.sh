@@ -4,8 +4,9 @@
 what=${PWD##*/}   
 extension=.sh
 
-
-sudo pacman -S youtube-dl
+#youtube-dl is dead
+#sudo pacman -S youtube-dl
+sudo pacman -S yt-dlp
 
 #peut être extension vide
 chmod +x $what$extension
